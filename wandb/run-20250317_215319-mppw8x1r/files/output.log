@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "d:\Git\IDCDF-WKY\run.py", line 65, in <module>
+    sys.exit(main(config_dict))
+             ^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\run.py", line 57, in main
+    datahub = DataHub(f"datasets/{config['data_type']}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\datahub.py", line 32, in __init__
+    exec("self.{} = {}".format(file_name, "read_func(\"{}\")".format(file_path)))
+  File "<string>", line 1, in <module>
+  File "d:\Git\IDCDF-WKY\inscd\datahub.py", line 31, in <lambda>
+    read_func = lambda path: pd.read_csv(data_source + "/" + path, header=None).to_numpy(dtype=float)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 1981, in to_numpy
+    result = self._mgr.as_array(dtype=dtype, copy=copy, na_value=na_value)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py", line 1687, in as_array
+    arr = np.array(blk.values, dtype=dtype, copy=copy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'user_id'

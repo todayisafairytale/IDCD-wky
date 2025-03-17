@@ -1,0 +1,14 @@
+{
+    "dataset": "idcd",
+    "files": {
+      "q_matrix": "q_matrix.csv",
+      "train": "train.csv",
+      "valid":"valid.csv",
+      "test":"test.csv"
+    },
+    "info": {
+      "student_num": 4209,
+      "exercise_num": 20,
+      "knowledge_num": 11
+    }
+  }

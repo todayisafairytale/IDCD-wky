@@ -1,0 +1,22 @@
+Number of train_response logs 58926
+[Epoch 1]
+Training:   0%|                                                             | 0/231 [00:00<?, ?it/s]d:\Git\IDCDF-WKY\inscd\_unifier.py:30: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  r:torch.Tensor=torch.tensor(r,dtype=torch.int64)
+Training:   0%|                                                             | 0/231 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "d:\Git\IDCDF-WKY\run.py", line 65, in <module>
+    sys.exit(main(config_dict))
+             ^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\run.py", line 62, in main
+    idcdm.train(datahub, "train", "valid", valid_metrics=validate_metrics, batch_size=config['batch_size'],epoch=config['epoch'], lr=config['lr'])
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 45, in train
+    self._train(datahub=datahub, set_type=set_type,
+  File "d:\Git\IDCDF-WKY\inscd\_base.py", line 50, in _train
+    unifier.train(datahub, set_type, self.extractor, self.inter_func, **kwargs)
+  File "d:\Git\IDCDF-WKY\inscd\_unifier.py", line 44, in train
+    pred_r: torch.Tensor = inter_func.compute(**compute_params)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\interfunc\idcd.py", line 51, in compute
+    return self.mlp(input_Mas-input_diff)
+                    ~~~~~~~~~^~~~~~~~~~~
+RuntimeError: The size of tensor a (64) must match the size of tensor b (2) at non-singleton dimension 1

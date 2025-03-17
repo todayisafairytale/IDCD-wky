@@ -1,0 +1,19 @@
+{"time":"2025-03-17T23:01:00.5497952+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-17T23:01:00.5497952+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250317_230100-8lo34803\\logs\\debug-core.log"}
+{"time":"2025-03-17T23:01:00.7050737+08:00","level":"INFO","msg":"created new stream","id":"8lo34803"}
+{"time":"2025-03-17T23:01:00.7050737+08:00","level":"INFO","msg":"stream: started","id":"8lo34803"}
+{"time":"2025-03-17T23:01:00.7060192+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"8lo34803"}
+{"time":"2025-03-17T23:01:00.7065383+08:00","level":"INFO","msg":"handler: started","stream_id":"8lo34803"}
+{"time":"2025-03-17T23:01:00.7065383+08:00","level":"INFO","msg":"sender: started","stream_id":"8lo34803"}
+{"time":"2025-03-17T23:01:01.3090893+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T23:01:05.7521984+08:00","level":"INFO","msg":"stream: closing","id":"8lo34803"}
+{"time":"2025-03-17T23:01:05.7521984+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T23:01:05.753585+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T23:01:06.2170531+08:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-03-17T23:01:06.2170531+08:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-03-17T23:01:06.2170531+08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-03-17T23:01:06.9010043+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T23:01:07.3879965+08:00","level":"INFO","msg":"handler: closed","stream_id":"8lo34803"}
+{"time":"2025-03-17T23:01:07.3879965+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8lo34803"}
+{"time":"2025-03-17T23:01:07.3879965+08:00","level":"INFO","msg":"sender: closed","stream_id":"8lo34803"}
+{"time":"2025-03-17T23:01:07.3888018+08:00","level":"INFO","msg":"stream: closed","id":"8lo34803"}

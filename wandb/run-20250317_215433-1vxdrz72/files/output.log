@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "d:\Git\IDCDF-WKY\run.py", line 65, in <module>
+    sys.exit(main(config_dict))
+             ^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\run.py", line 59, in main
+    print("Number of response logs {}".format(len(datahub)))
+                                              ^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\datahub.py", line 262, in __len__
+    return self.response.shape[0]
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ellipsis' object has no attribute 'shape'

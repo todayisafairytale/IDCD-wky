@@ -1,0 +1,30 @@
+Number of train_response logs 58926
+[Epoch 1]
+Training:   0%|                                                             | 0/231 [00:00<?, ?it/s]d:\Git\IDCDF-WKY\inscd\_unifier.py:30: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  r:torch.Tensor=torch.tensor(r,dtype=torch.int64)
+Training:   0%|                                                             | 0/231 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "d:\Git\IDCDF-WKY\run.py", line 65, in <module>
+    sys.exit(main(config_dict))
+             ^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\run.py", line 62, in main
+    idcdm.train(datahub, "train", "valid", valid_metrics=validate_metrics, batch_size=config['batch_size'],epoch=config['epoch'], lr=config['lr'])
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 45, in train
+    self._train(datahub=datahub, set_type=set_type,
+  File "d:\Git\IDCDF-WKY\inscd\_base.py", line 50, in _train
+    unifier.train(datahub, set_type, self.extractor, self.inter_func, **kwargs)
+  File "d:\Git\IDCDF-WKY\inscd\_unifier.py", line 45, in train
+    loss = loss_func(pred_r, r) + extra_loss
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\loss.py", line 618, in forward
+    return F.binary_cross_entropy(input, target, weight=self.weight, reduction=self.reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\functional.py", line 3145, in binary_cross_entropy
+    raise ValueError(
+ValueError: Using a target size (torch.Size([256])) that is different to the input size (torch.Size([256, 1])) is deprecated. Please ensure they have the same size.

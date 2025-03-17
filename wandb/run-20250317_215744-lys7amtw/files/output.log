@@ -1,0 +1,19 @@
+Number of train_response logs 58926
+Traceback (most recent call last):
+  File "d:\Git\IDCDF-WKY\run.py", line 65, in <module>
+    sys.exit(main(config_dict))
+             ^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\run.py", line 61, in main
+    idcdm.build(device=config['device'])
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 27, in build
+    self.inter_func = IDCD_IF(knowledge_num=self.knowledge_num,
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\interfunc\idcd.py", line 19, in __init__
+    self.stu_layer=F.sigmoid(nn.Linear(knowledge_num,stu_latent_dim))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\functional.py", line 2010, in sigmoid
+    return input.sigmoid()
+           ^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1709, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Linear' object has no attribute 'sigmoid'

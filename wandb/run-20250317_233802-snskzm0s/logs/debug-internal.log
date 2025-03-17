@@ -1,0 +1,19 @@
+{"time":"2025-03-17T23:38:02.3161523+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-17T23:38:02.3161523+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250317_233802-snskzm0s\\logs\\debug-core.log"}
+{"time":"2025-03-17T23:38:02.4658474+08:00","level":"INFO","msg":"created new stream","id":"snskzm0s"}
+{"time":"2025-03-17T23:38:02.4658474+08:00","level":"INFO","msg":"stream: started","id":"snskzm0s"}
+{"time":"2025-03-17T23:38:02.4664876+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"snskzm0s"}
+{"time":"2025-03-17T23:38:02.4670026+08:00","level":"INFO","msg":"handler: started","stream_id":"snskzm0s"}
+{"time":"2025-03-17T23:38:02.4670026+08:00","level":"INFO","msg":"sender: started","stream_id":"snskzm0s"}
+{"time":"2025-03-17T23:38:03.0848999+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T23:38:07.4648052+08:00","level":"INFO","msg":"stream: closing","id":"snskzm0s"}
+{"time":"2025-03-17T23:38:07.4648052+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T23:38:07.4681597+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T23:38:07.7564208+08:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-03-17T23:38:07.7564208+08:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-03-17T23:38:07.7564208+08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-03-17T23:38:08.7715417+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T23:38:10.7765312+08:00","level":"INFO","msg":"handler: closed","stream_id":"snskzm0s"}
+{"time":"2025-03-17T23:38:10.7765312+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"snskzm0s"}
+{"time":"2025-03-17T23:38:10.7765312+08:00","level":"INFO","msg":"sender: closed","stream_id":"snskzm0s"}
+{"time":"2025-03-17T23:38:10.7772154+08:00","level":"INFO","msg":"stream: closed","id":"snskzm0s"}

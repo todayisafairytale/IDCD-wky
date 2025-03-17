@@ -1,0 +1,18 @@
+Number of train_response logs 58926
+[Epoch 1]
+Traceback (most recent call last):
+  File "d:\Git\IDCDF-WKY\run.py", line 65, in <module>
+    sys.exit(main(config_dict))
+             ^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\run.py", line 62, in main
+    idcdm.train(datahub, "train", "valid", valid_metrics=validate_metrics, batch_size=config['batch_size'],epoch=config['epoch'], lr=config['lr'])
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 45, in train
+    self._train(datahub=datahub, set_type=set_type,
+  File "d:\Git\IDCDF-WKY\inscd\_base.py", line 50, in _train
+    unifier.train(datahub, set_type, self.extractor, self.inter_func, **kwargs)
+  File "d:\Git\IDCDF-WKY\inscd\_unifier.py", line 12, in train
+    dataloader = datahub.to_dataloader(
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\datahub.py", line 176, in to_dataloader
+    raise ValueError("Dataset \"{}\" does not exist. If you create your new dataset via \"load_data()\", "
+ValueError: Dataset "train" does not exist. If you create your new dataset via "load_data()", the parameter "dataset" is one of the dict_keys(['rain', 'valid', 'test'])

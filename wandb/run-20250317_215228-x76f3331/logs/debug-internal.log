@@ -1,0 +1,19 @@
+{"time":"2025-03-17T21:52:28.1741988+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-17T21:52:28.1747119+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250317_215228-x76f3331\\logs\\debug-core.log"}
+{"time":"2025-03-17T21:52:28.9993336+08:00","level":"INFO","msg":"created new stream","id":"x76f3331"}
+{"time":"2025-03-17T21:52:28.9993336+08:00","level":"INFO","msg":"stream: started","id":"x76f3331"}
+{"time":"2025-03-17T21:52:28.9998261+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"x76f3331"}
+{"time":"2025-03-17T21:52:29.0003455+08:00","level":"INFO","msg":"handler: started","stream_id":"x76f3331"}
+{"time":"2025-03-17T21:52:29.0003455+08:00","level":"INFO","msg":"sender: started","stream_id":"x76f3331"}
+{"time":"2025-03-17T21:52:29.7874388+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T21:52:35.6657527+08:00","level":"INFO","msg":"stream: closing","id":"x76f3331"}
+{"time":"2025-03-17T21:52:35.6657527+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T21:52:35.6681458+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T21:52:36.82906+08:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-03-17T21:52:36.82906+08:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-03-17T21:52:36.82906+08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-03-17T21:52:37.8510156+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T21:52:38.4542472+08:00","level":"INFO","msg":"handler: closed","stream_id":"x76f3331"}
+{"time":"2025-03-17T21:52:38.4542472+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"x76f3331"}
+{"time":"2025-03-17T21:52:38.4542472+08:00","level":"INFO","msg":"sender: closed","stream_id":"x76f3331"}
+{"time":"2025-03-17T21:52:38.4557703+08:00","level":"INFO","msg":"stream: closed","id":"x76f3331"}
