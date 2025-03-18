@@ -1,0 +1,16 @@
+{"time":"2025-03-18T20:16:08.9964749+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-18T20:16:08.9964749+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250318_201608-cxiom3bv\\logs\\debug-core.log"}
+{"time":"2025-03-18T20:16:09.1647705+08:00","level":"INFO","msg":"created new stream","id":"cxiom3bv"}
+{"time":"2025-03-18T20:16:09.1647705+08:00","level":"INFO","msg":"stream: started","id":"cxiom3bv"}
+{"time":"2025-03-18T20:16:09.1657437+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"cxiom3bv"}
+{"time":"2025-03-18T20:16:09.1657437+08:00","level":"INFO","msg":"sender: started","stream_id":"cxiom3bv"}
+{"time":"2025-03-18T20:16:09.1662645+08:00","level":"INFO","msg":"handler: started","stream_id":"cxiom3bv"}
+{"time":"2025-03-18T20:16:11.2648302+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-18T20:17:02.096094+08:00","level":"INFO","msg":"stream: closing","id":"cxiom3bv"}
+{"time":"2025-03-18T20:17:02.096094+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-18T20:17:02.0971697+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-18T20:17:04.4121682+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-18T20:17:05.0177512+08:00","level":"INFO","msg":"handler: closed","stream_id":"cxiom3bv"}
+{"time":"2025-03-18T20:17:05.0177512+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cxiom3bv"}
+{"time":"2025-03-18T20:17:05.0177512+08:00","level":"INFO","msg":"sender: closed","stream_id":"cxiom3bv"}
+{"time":"2025-03-18T20:17:05.0183775+08:00","level":"INFO","msg":"stream: closed","id":"cxiom3bv"}

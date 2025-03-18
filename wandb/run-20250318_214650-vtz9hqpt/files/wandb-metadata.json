@@ -1,0 +1,32 @@
+{
+  "os":  "Windows-11-10.0.22631-SP0",
+  "python":  "3.12.4",
+  "startedAt":  "2025-03-18T13:46:50.491036Z",
+  "program":  "d:\\Git\\IDCDF-WKY\\run.py",
+  "codePath":  "run.py",
+  "git":  {
+    "remote":  "git@github.com:todayisafairytale/IDCD-wky.git",
+    "commit":  "4d77c6780651c2f04eaa9ee88bdc1539345e7834"
+  },
+  "email":  "10235102479@stu.ecnu.edu.cn",
+  "root":  "D:\\Git\\IDCDF-WKY",
+  "host":  "DESKTOP-7USASVH",
+  "username":  "admin",
+  "executable":  "C:\\Users\\admin.DESKTOP-7USASVH\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "codePathLocal":  "run.py",
+  "cpu_count":  4,
+  "cpu_count_logical":  4,
+  "disk":  {
+    "/":  {
+      "total":  "128024834048",
+      "used":  "85455953920"
+    }
+  },
+  "memory":  {
+    "total":  "12617756672"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  4
+  }
+}

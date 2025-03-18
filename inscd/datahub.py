@@ -12,16 +12,12 @@ class DataHub:
     def __init__(self, data_source: Union[str, np.ndarray], **kwargs):
         # ellipsis object for loading
         self.config: dict = ...
-        self.response: np.ndarray = ...
-        self.response_tuda:np.ndarray = ...
+        self.all:np.ndarray = ...
         self.q_matrix: np.ndarray = ...
-        self.S: np.ndarray = ...
-        self.theta_tuda:np.ndarray=...
         self.student_num: int = ...
         self.exercise_num: int = ...
         self.knowledge_num: int = ...
         self.train:np.ndarray=...
-        self.valid:np.ndarray=...
         self.test:np.ndarray=...
         # scan the datasets to load all available files
         if type(data_source) is str:
@@ -37,14 +33,14 @@ class DataHub:
 
         self.__set_type_map = {
             "train":self.train,
-            "valid":self.valid,
-            "test":self.test
+            "test":self.test,
+            "all":self.all
         }
 
     def q_density(self):
         return np.sum(self.q_matrix) / self.q_matrix.shape[0]
 
-    def top_k_concepts(self, top_k: int, set_type="total"):
+    def top_k_concepts(self, top_k: int, set_type):
         if set_type not in self.__set_type_map.keys():
             raise ValueError("Dataset \"{}\" does not exist. If you create your new dataset via \"load_data()\", "
                              "the parameter \"dataset\" is one of the {}".format(set_type, self.__set_type_map.keys()))
@@ -196,7 +192,7 @@ class DataHub:
             )
         return tud.DataLoader(tensor_dataset, batch_size, shuffle=label)
 
-    def r_matrix(self, set_type="total"):
+    def r_matrix(self, set_type="all"):
         if set_type not in self.__set_type_map.keys():
             raise ValueError("Dataset \"{}\" does not exist. If you create your new dataset via \"load_data()\", "
                              "the parameter \"dataset\" is one of the {}".format(set_type, self.__set_type_map.keys()))

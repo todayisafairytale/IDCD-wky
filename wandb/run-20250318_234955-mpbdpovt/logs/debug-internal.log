@@ -1,0 +1,17 @@
+{"time":"2025-03-18T23:49:55.7945185+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-18T23:49:55.7945185+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250318_234955-mpbdpovt\\logs\\debug-core.log"}
+{"time":"2025-03-18T23:49:55.9274738+08:00","level":"INFO","msg":"created new stream","id":"mpbdpovt"}
+{"time":"2025-03-18T23:49:55.9274738+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"mpbdpovt"}
+{"time":"2025-03-18T23:49:55.9278576+08:00","level":"INFO","msg":"sender: started","stream_id":"mpbdpovt"}
+{"time":"2025-03-18T23:49:55.9274738+08:00","level":"INFO","msg":"handler: started","stream_id":"mpbdpovt"}
+{"time":"2025-03-18T23:49:55.9283662+08:00","level":"INFO","msg":"stream: started","id":"mpbdpovt"}
+{"time":"2025-03-18T23:49:56.7192878+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-18T23:50:18.8589388+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/10235102479-east-china-normal-university/idcd/mpbdpovt/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-18T23:53:51.2783173+08:00","level":"INFO","msg":"stream: closing","id":"mpbdpovt"}
+{"time":"2025-03-18T23:53:51.2783173+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-18T23:53:51.2790897+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-18T23:53:53.4960805+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-18T23:53:54.1014442+08:00","level":"INFO","msg":"handler: closed","stream_id":"mpbdpovt"}
+{"time":"2025-03-18T23:53:54.1014442+08:00","level":"INFO","msg":"sender: closed","stream_id":"mpbdpovt"}
+{"time":"2025-03-18T23:53:54.1014442+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mpbdpovt"}
+{"time":"2025-03-18T23:53:54.1019667+08:00","level":"INFO","msg":"stream: closed","id":"mpbdpovt"}

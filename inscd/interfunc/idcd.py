@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from collections import OrderedDict
 
 from .._base import _InteractionFunction
+from ..interfunc._util import none_neg_clipper
 
 
 class IDCD_IF(_InteractionFunction, nn.Module):
@@ -50,6 +51,17 @@ class IDCD_IF(_InteractionFunction, nn.Module):
         input_diff=self.exer_L(torch.Tensor(exercise_ts*q_mask))
         return self.mlp(input_Mas-input_diff)
 
-    def transform(self, tensor):
-        return F.sigmoid(tensor)
+    def transform(self, mastery):
+        return F.sigmoid(mastery)
+    
+    def monotonicity(self): 
+        for layer in self.stu_L:
+            if isinstance(layer, nn.Linear):
+                layer.apply(none_neg_clipper)
+        # for layer in self.exer_L:
+        #     if isinstance(layer,nn.Linear):
+        #         layer.apply(none_neg_clipper)
+        # for layer in self.mlp:
+        #     if isinstance(layer,nn.Linear):
+        #         layer.apply(none_neg_clipper)
 

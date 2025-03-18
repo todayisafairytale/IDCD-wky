@@ -21,7 +21,7 @@ class _Unifier:
             epoch_losses = []
             extractor.train()
             inter_func.train()
-            r_matrix:torch.Tensor=datahub.r_matrix(set_type=set_type)
+            r_matrix:torch.Tensor=datahub.r_matrix(set_type="all")
             for batch_data in tqdm(dataloader, "Training"):
                 student_id, exercise_id,q_mask,r= batch_data
                 student_id: torch.Tensor = student_id.to(device)
@@ -47,6 +47,7 @@ class _Unifier:
                 loss.backward()
                 optimizer.step()
                 extractor.monotonicity()
+                inter_func.monotonicity()
                 epoch_losses.append(loss.mean().item())
             print("Average loss: {}".format(float(np.mean(epoch_losses))))
         # To cope with statistics methods
@@ -66,7 +67,7 @@ class _Unifier:
             extractor.eval()
             inter_func.eval()
             pred = []
-            r_matrix:torch.Tensor=datahub.r_matrix(set_type=set_type)
+            r_matrix:torch.Tensor=datahub.r_matrix(set_type="all")
             for batch_data in tqdm(dataloader, "Evaluating"):
                 student_id, exercise_id, q_mask = batch_data
                 student_id: torch.Tensor = student_id.to(device)
@@ -74,6 +75,7 @@ class _Unifier:
                 q_mask: torch.Tensor = q_mask.to(device)
                 _ = extractor.extract(student_id,exercise_id, r_matrix)
                 student_ts, exercise_ts = _[:2]
+                extractor.mastery[student_id]=student_ts
                 compute_params = {
                     'student_ts': student_ts,
                     'exercise_ts':exercise_ts,

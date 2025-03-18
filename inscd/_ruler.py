@@ -110,7 +110,7 @@ class _Ruler:
         know_n = q_matrix.shape[1]
         r_matrix = datahub.r_matrix(set_type)
         if know_n > self.partial_doa:
-            concepts = datahub.top_k_concepts(self.top_k_doa)
+            concepts = datahub.top_k_concepts(self.top_k_doa,set_type=set_type)
             doa_k_list = Parallel(n_jobs=-1)(
                 delayed(self.__calculate_doa_k_block)(mastery_level, q_matrix, r_matrix, k) for k in concepts)
         else:
@@ -151,13 +151,13 @@ class _Ruler:
 
     def __call__(self, model, datahub, set_type: str, pred_r, metrics: list):
         true_r = datahub.detach_labels(set_type)
-        # mastery_level = model.diagnose().detach().cpu().numpy()
+        mastery_level = model.diagnose().detach().cpu().numpy()
         results = {}
         for metric in metrics:
             if metric in ["auc","acc"]:
                 results[metric] = self.__method_map[metric](true_r, pred_r)
-            # elif metric in ["doa"]:
-            #     results[metric] = self.__method_map[metric](mastery_level, datahub, set_type)
+            elif metric in ["doa"]:
+                results[metric] = self.__method_map[metric](mastery_level, datahub, set_type)
             # elif metric in ["mad"]:
             #     results[metric] = self.__method_map[metric](mastery_level)
             else:

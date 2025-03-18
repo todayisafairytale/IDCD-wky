@@ -13,6 +13,7 @@ class IDCD_EX(_Extractor, nn.Module):
         self.knowledge_num = knowledge_num
         self.device = device
         self.dtype = dtype
+        self.mastery=torch.Tensor(torch.zeros(size=(student_num,knowledge_num),requires_grad=False))
         
         self.__student_emb = nn.Sequential(
             OrderedDict(
@@ -50,12 +51,10 @@ class IDCD_EX(_Extractor, nn.Module):
                 layer.apply(none_neg_clipper)
 
     def extract(self, student_id, exercise_id, r_matrix):
-        self.student_ts = self.__student_emb(torch.Tensor(r_matrix[student_id]))
-        self.exercise_ts=self.__exercise_emb(torch.Tensor(r_matrix.T[exercise_id]))
-        return self.student_ts, self.exercise_ts
-
+        student_ts = self.__student_emb(torch.Tensor(r_matrix[student_id]))
+        exercise_ts=self.__exercise_emb(torch.Tensor(r_matrix.T[exercise_id]))
+        return student_ts, exercise_ts
     def __getitem__(self, item):
-        self.__emb_map["mastery"] = self.student_ts
-        self.__emb_map["exercise"] = self.exercise_ts
+        self.__emb_map["mastery"] = self.mastery
         return self.__emb_map[item]
 

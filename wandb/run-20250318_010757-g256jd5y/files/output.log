@@ -1,0 +1,31 @@
+Number of train_response logs 58926
+[Epoch 1]
+Training: 100%|███████████████████████████████████████████████████| 231/231 [00:17<00:00, 13.17it/s]
+Average loss: 1.0654640682847984
+Evaluating: 100%|███████████████████████████████████████████████████| 33/33 [00:01<00:00, 30.50it/s]
+Traceback (most recent call last):
+  File "d:\Git\IDCDF-WKY\run.py", line 65, in <module>
+    sys.exit(main(config_dict))
+             ^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\run.py", line 62, in main
+    idcdm.train(datahub, "train", "valid", valid_metrics=validate_metrics, batch_size=config['batch_size'],epoch=config['epoch'], lr=config['lr'])
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 45, in train
+    self._train(datahub=datahub, set_type=set_type,
+  File "d:\Git\IDCDF-WKY\inscd\_base.py", line 52, in _train
+    self.score(datahub, valid_set_type, valid_metrics, **kwargs)
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 57, in score
+    return self._score(datahub=datahub, set_type=set_type, metrics=metrics, batch_size=batch_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\_listener.py", line 33, in wrapper
+    result = self.__format(func(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\_base.py", line 67, in _score
+    return ruler(self, datahub, set_type, pred_r, metrics)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\_ruler.py", line 154, in __call__
+    mastery_level = model.diagnose().detach().cpu().numpy()
+                    ^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 62, in diagnose
+    return self.inter_func.transform(self.extractor["mastery"],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: IDCD_IF.transform() takes 2 positional arguments but 3 were given

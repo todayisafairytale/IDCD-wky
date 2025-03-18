@@ -34,7 +34,7 @@ class IDCDM(_CognitiveDiagnosisModel):
     def train(self, datahub: DataHub, set_type="train", valid_set_type="valid",
               valid_metrics=None, epoch=10, lr=2e-3,  batch_size=256):
         if valid_metrics is None:
-            valid_metrics = ['auc','acc']
+            valid_metrics = ['auc','acc','doa']
         loss_func = nn.BCELoss()
         optimizer = optim.Adam([{'params': self.extractor.parameters(),
                                  'lr': lr},
@@ -46,21 +46,20 @@ class IDCDM(_CognitiveDiagnosisModel):
                         valid_set_type=valid_set_type, valid_metrics=valid_metrics,
                         batch_size=batch_size, loss_func=loss_func, optimizer=optimizer)
         if self.save_flag:
-            self.save("D:/Git/Over-estimate/extractor_after_step1.pth","D:/Git/Over-estimate/interfunc_after_step1.pth")
+            self.save("save.pth")
     
     def predict(self, datahub: DataHub, set_type, batch_size=256, **kwargs):
         return self._predict(datahub=datahub, set_type=set_type, batch_size=batch_size)
 
     def score(self, datahub: DataHub, set_type, metrics: list, batch_size=256, **kwargs) -> dict:
         if metrics is None:
-            metrics = ["auc","acc"]
+            metrics = ["auc","acc","doa"]
         return self._score(datahub=datahub, set_type=set_type, metrics=metrics, batch_size=batch_size)
 
     def diagnose(self):
         if self.inter_func is Ellipsis or self.extractor is Ellipsis:
             raise RuntimeError("Call \"build\" method to build interaction function before calling this method.")
-        return self.inter_func.transform(self.extractor["mastery"],
-                                         self.extractor["knowledge"])
+        return self.inter_func.transform(self.extractor["mastery"])
 
     def load(self, ex_path: str, if_path: str):
         if self.inter_func is Ellipsis or self.extractor is Ellipsis:

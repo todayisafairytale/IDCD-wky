@@ -1,0 +1,17 @@
+{"time":"2025-03-18T23:54:36.9555998+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-18T23:54:36.9561154+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250318_235436-erjec028\\logs\\debug-core.log"}
+{"time":"2025-03-18T23:54:37.0913829+08:00","level":"INFO","msg":"created new stream","id":"erjec028"}
+{"time":"2025-03-18T23:54:37.0913829+08:00","level":"INFO","msg":"stream: started","id":"erjec028"}
+{"time":"2025-03-18T23:54:37.0913829+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"erjec028"}
+{"time":"2025-03-18T23:54:37.0913829+08:00","level":"INFO","msg":"handler: started","stream_id":"erjec028"}
+{"time":"2025-03-18T23:54:37.0913829+08:00","level":"INFO","msg":"sender: started","stream_id":"erjec028"}
+{"time":"2025-03-18T23:54:39.0803221+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-18T23:55:46.621316+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/10235102479-east-china-normal-university/idcd/erjec028/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-19T00:00:47.7019741+08:00","level":"INFO","msg":"stream: closing","id":"erjec028"}
+{"time":"2025-03-19T00:00:47.7019741+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-19T00:00:47.7028291+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-19T00:00:49.204076+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-19T00:00:49.8058265+08:00","level":"INFO","msg":"handler: closed","stream_id":"erjec028"}
+{"time":"2025-03-19T00:00:49.8058265+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"erjec028"}
+{"time":"2025-03-19T00:00:49.8058265+08:00","level":"INFO","msg":"sender: closed","stream_id":"erjec028"}
+{"time":"2025-03-19T00:00:49.8058265+08:00","level":"INFO","msg":"stream: closed","id":"erjec028"}

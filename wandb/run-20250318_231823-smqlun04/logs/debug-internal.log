@@ -1,0 +1,17 @@
+{"time":"2025-03-18T23:18:23.7956565+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-18T23:18:23.7956565+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250318_231823-smqlun04\\logs\\debug-core.log"}
+{"time":"2025-03-18T23:18:23.9598871+08:00","level":"INFO","msg":"created new stream","id":"smqlun04"}
+{"time":"2025-03-18T23:18:23.9598871+08:00","level":"INFO","msg":"stream: started","id":"smqlun04"}
+{"time":"2025-03-18T23:18:23.9602891+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"smqlun04"}
+{"time":"2025-03-18T23:18:23.9602891+08:00","level":"INFO","msg":"sender: started","stream_id":"smqlun04"}
+{"time":"2025-03-18T23:18:23.9602891+08:00","level":"INFO","msg":"handler: started","stream_id":"smqlun04"}
+{"time":"2025-03-18T23:18:25.050274+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-18T23:28:32.5388952+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/10235102479-east-china-normal-university/idcd/smqlun04/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-18T23:36:43.4705894+08:00","level":"INFO","msg":"stream: closing","id":"smqlun04"}
+{"time":"2025-03-18T23:36:43.4705894+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-18T23:36:43.471515+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-18T23:36:45.4820039+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-18T23:36:46.3678177+08:00","level":"INFO","msg":"handler: closed","stream_id":"smqlun04"}
+{"time":"2025-03-18T23:36:46.3692229+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"smqlun04"}
+{"time":"2025-03-18T23:36:46.3692229+08:00","level":"INFO","msg":"sender: closed","stream_id":"smqlun04"}
+{"time":"2025-03-18T23:36:46.3697838+08:00","level":"INFO","msg":"stream: closed","id":"smqlun04"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-19T00:07:17.2358577+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-19T00:07:17.2358577+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250319_000717-clpkrhtu\\logs\\debug-core.log"}
+{"time":"2025-03-19T00:07:17.3845705+08:00","level":"INFO","msg":"created new stream","id":"clpkrhtu"}
+{"time":"2025-03-19T00:07:17.3848907+08:00","level":"INFO","msg":"stream: started","id":"clpkrhtu"}
+{"time":"2025-03-19T00:07:17.3850448+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"clpkrhtu"}
+{"time":"2025-03-19T00:07:17.3855579+08:00","level":"INFO","msg":"handler: started","stream_id":"clpkrhtu"}
+{"time":"2025-03-19T00:07:17.3855579+08:00","level":"INFO","msg":"sender: started","stream_id":"clpkrhtu"}
+{"time":"2025-03-19T00:07:18.1731071+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-19T00:08:03.7852676+08:00","level":"INFO","msg":"stream: closing","id":"clpkrhtu"}
+{"time":"2025-03-19T00:08:03.7852676+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-19T00:08:03.7862358+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-19T00:08:05.1926907+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-19T00:08:05.7194287+08:00","level":"INFO","msg":"handler: closed","stream_id":"clpkrhtu"}
+{"time":"2025-03-19T00:08:05.7199485+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"clpkrhtu"}
+{"time":"2025-03-19T00:08:05.7200123+08:00","level":"INFO","msg":"sender: closed","stream_id":"clpkrhtu"}
+{"time":"2025-03-19T00:08:05.7205281+08:00","level":"INFO","msg":"stream: closed","id":"clpkrhtu"}

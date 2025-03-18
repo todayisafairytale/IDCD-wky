@@ -1,0 +1,14 @@
+{
+    "dataset": "SLP",
+    "files": {
+      "q_matrix": "q_matrix.csv",
+      "train": "orginal_train.csv",
+      "test":"test_response.csv",
+      "all":"induct_train.csv"
+    },
+    "info": {
+      "student_num": 1080,
+      "exercise_num": 609,
+      "knowledge_num": 32
+    }
+  }

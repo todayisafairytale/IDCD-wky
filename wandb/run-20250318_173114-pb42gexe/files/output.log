@@ -1,0 +1,65 @@
+Number of train_response logs 58926
+[Epoch 1]
+Training: 100%|███████████████████████████████████████| 231/231 [00:30<00:00,  7.63it/s]
+Average loss: 1.0654640682847984
+Evaluating: 100%|███████████████████████████████████████| 33/33 [00:03<00:00, 10.28it/s]
+joblib.externals.loky.process_executor._RemoteTraceback:
+"""
+Traceback (most recent call last):
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\externals\loky\process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\externals\loky\process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\_ruler.py", line 72, in __calculate_doa_k
+    numerator += np.sum(delta_matrix * numerator_)
+                        ~~~~~~~~~~~~~^~~~~~~~~~~~
+ValueError: operands could not be broadcast together with shapes (226,226) (4209,4209)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Git\IDCDF-WKY\run.py", line 65, in <module>
+    sys.exit(main(config_dict))
+             ^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\run.py", line 62, in main
+    idcdm.train(datahub, "train", "valid", valid_metrics=validate_metrics, batch_size=config['batch_size'],epoch=config['epoch'], lr=config['lr'])
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 45, in train
+    self._train(datahub=datahub, set_type=set_type,
+  File "d:\Git\IDCDF-WKY\inscd\_base.py", line 52, in _train
+    self.score(datahub, valid_set_type, valid_metrics, **kwargs)
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 57, in score
+    return self._score(datahub=datahub, set_type=set_type, metrics=metrics, batch_size=batch_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\_listener.py", line 33, in wrapper
+    result = self.__format(func(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\_base.py", line 67, in _score
+    return ruler(self, datahub, set_type, pred_r, metrics)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\_ruler.py", line 160, in __call__
+    results[metric] = self.__method_map[metric](mastery_level, datahub, set_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\inscd\_ruler.py", line 117, in degree_of_agreement
+    doa_k_list = Parallel(n_jobs=-1)(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\parallel.py", line 2007, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\parallel.py", line 1650, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\parallel.py", line 1754, in _retrieve
+    self._raise_error_fast()
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\parallel.py", line 1789, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\parallel.py", line 745, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\joblib\parallel.py", line 763, in _return_or_raise
+    raise self._result
+ValueError: operands could not be broadcast together with shapes (226,226) (4209,4209)

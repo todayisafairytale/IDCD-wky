@@ -3,7 +3,6 @@
     "files": {
       "q_matrix": "q_matrix.csv",
       "train": "train.csv",
-      "valid":"valid.csv",
       "test":"test.csv"
     },
     "info": {

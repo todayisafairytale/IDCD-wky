@@ -1,0 +1,22 @@
+{"time":"2025-03-18T20:50:54.593409+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-18T20:50:54.593409+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250318_205054-5twj4378\\logs\\debug-core.log"}
+{"time":"2025-03-18T20:50:54.7652348+08:00","level":"INFO","msg":"created new stream","id":"5twj4378"}
+{"time":"2025-03-18T20:50:54.7652348+08:00","level":"INFO","msg":"stream: started","id":"5twj4378"}
+{"time":"2025-03-18T20:50:54.7652348+08:00","level":"INFO","msg":"sender: started","stream_id":"5twj4378"}
+{"time":"2025-03-18T20:50:54.7652348+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"5twj4378"}
+{"time":"2025-03-18T20:50:54.7670825+08:00","level":"INFO","msg":"handler: started","stream_id":"5twj4378"}
+{"time":"2025-03-18T20:50:54.7765996+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-18T20:50:56.7993362+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-18T20:51:01.5910831+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-18T20:51:10.5401396+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-18T20:51:26.7571693+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-18T20:52:03.8738494+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-18T20:55:26.4255976+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/10235102479-east-china-normal-university/idcd/5twj4378/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-18T20:56:25.9055198+08:00","level":"INFO","msg":"stream: closing","id":"5twj4378"}
+{"time":"2025-03-18T20:56:25.9061357+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-18T20:56:25.9086444+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-18T20:56:27.7685046+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-18T20:56:28.6088522+08:00","level":"INFO","msg":"handler: closed","stream_id":"5twj4378"}
+{"time":"2025-03-18T20:56:28.6088522+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"5twj4378"}
+{"time":"2025-03-18T20:56:28.6088522+08:00","level":"INFO","msg":"sender: closed","stream_id":"5twj4378"}
+{"time":"2025-03-18T20:56:28.6093828+08:00","level":"INFO","msg":"stream: closed","id":"5twj4378"}
