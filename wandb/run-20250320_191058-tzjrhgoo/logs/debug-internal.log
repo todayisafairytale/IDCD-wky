@@ -1,0 +1,16 @@
+{"time":"2025-03-20T19:10:58.1264714+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-20T19:10:58.1264714+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250320_191058-tzjrhgoo\\logs\\debug-core.log"}
+{"time":"2025-03-20T19:10:58.291007+08:00","level":"INFO","msg":"created new stream","id":"tzjrhgoo"}
+{"time":"2025-03-20T19:10:58.291007+08:00","level":"INFO","msg":"stream: started","id":"tzjrhgoo"}
+{"time":"2025-03-20T19:10:58.2924091+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"tzjrhgoo"}
+{"time":"2025-03-20T19:10:58.2924091+08:00","level":"INFO","msg":"handler: started","stream_id":"tzjrhgoo"}
+{"time":"2025-03-20T19:10:58.2924091+08:00","level":"INFO","msg":"sender: started","stream_id":"tzjrhgoo"}
+{"time":"2025-03-20T19:10:58.8622829+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-20T19:14:59.955351+08:00","level":"INFO","msg":"stream: closing","id":"tzjrhgoo"}
+{"time":"2025-03-20T19:14:59.955351+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-20T19:14:59.9569394+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-20T19:15:01.3324309+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-20T19:15:01.8801607+08:00","level":"INFO","msg":"handler: closed","stream_id":"tzjrhgoo"}
+{"time":"2025-03-20T19:15:01.8801607+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tzjrhgoo"}
+{"time":"2025-03-20T19:15:01.8802518+08:00","level":"INFO","msg":"sender: closed","stream_id":"tzjrhgoo"}
+{"time":"2025-03-20T19:15:01.8802518+08:00","level":"INFO","msg":"stream: closed","id":"tzjrhgoo"}

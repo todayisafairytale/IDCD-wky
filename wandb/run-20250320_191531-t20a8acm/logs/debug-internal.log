@@ -1,0 +1,16 @@
+{"time":"2025-03-20T19:15:31.5236854+08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-03-20T19:15:31.5247055+08:00","level":"INFO","msg":"created symlink","path":"D:\\Git\\IDCDF-WKY\\wandb\\run-20250320_191531-t20a8acm\\logs\\debug-core.log"}
+{"time":"2025-03-20T19:15:31.6681723+08:00","level":"INFO","msg":"created new stream","id":"t20a8acm"}
+{"time":"2025-03-20T19:15:31.668687+08:00","level":"INFO","msg":"stream: started","id":"t20a8acm"}
+{"time":"2025-03-20T19:15:31.668687+08:00","level":"INFO","msg":"sender: started","stream_id":"t20a8acm"}
+{"time":"2025-03-20T19:15:31.668687+08:00","level":"INFO","msg":"handler: started","stream_id":"t20a8acm"}
+{"time":"2025-03-20T19:15:31.668687+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"t20a8acm"}
+{"time":"2025-03-20T19:15:32.2968483+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-20T19:19:24.9270845+08:00","level":"INFO","msg":"stream: closing","id":"t20a8acm"}
+{"time":"2025-03-20T19:19:24.9270845+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-20T19:19:24.9277366+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-20T19:19:26.3356492+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-20T19:19:26.7973361+08:00","level":"INFO","msg":"handler: closed","stream_id":"t20a8acm"}
+{"time":"2025-03-20T19:19:26.7973361+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"t20a8acm"}
+{"time":"2025-03-20T19:19:26.7973361+08:00","level":"INFO","msg":"sender: closed","stream_id":"t20a8acm"}
+{"time":"2025-03-20T19:19:26.7979621+08:00","level":"INFO","msg":"stream: closed","id":"t20a8acm"}

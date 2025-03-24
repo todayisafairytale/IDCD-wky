@@ -1,14 +1,15 @@
 import numpy as np
 import torch
 import torch.nn as nn
-
 from tqdm import tqdm
+import wandb as wb
 
 
 class _Unifier:
     @staticmethod
     def train(datahub, set_type, extractor=None, inter_func=None, **kwargs):
         if isinstance(inter_func, nn.Module):
+            #from inscd import listener
             dataloader = datahub.to_dataloader(
                 batch_size=kwargs["batch_size"],
                 dtype=extractor.dtype,
@@ -49,7 +50,9 @@ class _Unifier:
                 extractor.monotonicity()
                 inter_func.monotonicity()
                 epoch_losses.append(loss.mean().item())
-            print("Average loss: {}".format(float(np.mean(epoch_losses))))
+            average_loss=float(np.mean(epoch_losses))
+            print("Average loss: {}".format(average_loss))
+            wb.log({"train_loss":average_loss})
         # To cope with statistics methods
         else:
             ...
