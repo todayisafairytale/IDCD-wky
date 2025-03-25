@@ -19,12 +19,12 @@ def set_seeds(seed: int):
 parser = argparse.ArgumentParser()
 parser.add_argument('--method', default='idcdm', type=str,
                     help='method')
-parser.add_argument('--epoch', type=int, help='epoch of method', default=100)
-parser.add_argument('--seed', default=0, type=int, help='seed for exp')
+parser.add_argument('--epoch', type=int, help='epoch of method', default=20)
+parser.add_argument('--seed', default=4, type=int, help='seed for exp')
 parser.add_argument('--data_type',default='SLP',help='dataset')
 parser.add_argument('--dtype', default=torch.float64, help='dtype of tensor')
 parser.add_argument('--device', default='cpu', type=str, help='device for exp')
-parser.add_argument('--batch_size', type=int, help='batch size of benchmark', default=256)
+parser.add_argument('--batch_size', type=int, help='batch size of benchmark', default=64)
 parser.add_argument('--lr', type=float, help='learning rate', default=4e-3)
 parser.add_argument('--test_size',default=0.2,help='test size')
 parser.add_argument('--stu_latent_dim',default=32,help='student latent dimension')
@@ -33,7 +33,7 @@ parser.add_argument('--exer_latent_dim',default=32,help='exercise latent dimensi
 config_dict = vars(parser.parse_args())
 
 method_name = config_dict['method']
-name = f"seed{config_dict['seed']}--nonpos--lr={config_dict['lr']}"
+name = f"seed{config_dict['seed']}--nonpos--lr={config_dict['lr']}--batch_size={config_dict['batch_size']}"
 tags = [config_dict['method'], str(config_dict['seed'])]
 config_dict['name'] = name
 method = config_dict['method']

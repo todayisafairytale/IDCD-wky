@@ -1,0 +1,43 @@
+Number of train_response logs 20025
+[Epoch 1]
+Training: 100%|███████████████████████████████████████████████████| 313/313 [01:45<00:00,  2.98it/s]
+Average loss: 0.6867938923378722
+Evaluating: 100%|██████████████████████████████████████████████████| 84/84 [00:00<00:00, 122.00it/s]
+{'acc': 54.18, 'auc': 64.51, 'doa': 88.75}
+[Epoch 2]
+Training: 100%|███████████████████████████████████████████████████| 313/313 [01:50<00:00,  2.84it/s]
+Average loss: 0.6689634212670615
+Evaluating: 100%|██████████████████████████████████████████████████| 84/84 [00:00<00:00, 128.41it/s]
+{'acc': 54.18, 'auc': 67.39, 'doa': 88.91}
+[Epoch 3]
+Training: 100%|███████████████████████████████████████████████████| 313/313 [02:04<00:00,  2.51it/s]
+Average loss: 0.6551045038448736
+Evaluating: 100%|██████████████████████████████████████████████████| 84/84 [00:00<00:00, 130.26it/s]
+{'acc': 54.18, 'auc': 62.28, 'doa': 91.35}
+[Epoch 4]
+Training: 100%|███████████████████████████████████████████████████| 313/313 [02:05<00:00,  2.49it/s]
+Average loss: 0.6463892924519011
+Evaluating: 100%|██████████████████████████████████████████████████| 84/84 [00:00<00:00, 130.63it/s]
+{'acc': 54.18, 'auc': 65.14, 'doa': 92.18}
+[Epoch 5]
+Training:  72%|████████████████████████████████████▍              | 224/313 [01:37<00:38,  2.29it/s]
+Traceback (most recent call last):
+  File "d:\Git\IDCDF-WKY\run.py", line 64, in <module>
+    sys.exit(main(config_dict))
+             ^^^^^^^^^^^^^^^^^
+  File "d:\Git\IDCDF-WKY\run.py", line 62, in main
+    idcdm.train(datahub, "train", "test", valid_metrics=metrics, batch_size=config['batch_size'],epoch=config['epoch'], lr=config['lr'])
+  File "d:\Git\IDCDF-WKY\inscd\models\idcdm.py", line 45, in train
+    self._train(datahub=datahub, set_type=set_type,
+  File "d:\Git\IDCDF-WKY\inscd\_base.py", line 50, in _train
+    unifier.train(datahub, set_type, self.extractor, self.inter_func, **kwargs)
+  File "d:\Git\IDCDF-WKY\inscd\_unifier.py", line 48, in train
+    loss.backward()
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\autograd\__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "C:\Users\admin.DESKTOP-7USASVH\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\autograd\graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
